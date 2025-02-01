@@ -17,3 +17,13 @@ e52972,127.0.0.1,POST,http://127.0.0.1:8000/login,1738365399,,302,request
 9b77fd,127.0.0.1,GET,http://127.0.0.1:8000/,1738365410,,200,request
 0aaa97,127.0.0.1,GET,http://127.0.0.1:8000/cart,1738365414,,200,request
 6fe728,127.0.0.1,GET,http://127.0.0.1:8000/create-checkout-session,1738365424,,302,request
+94402d,127.0.0.1,GET,http://127.0.0.1:8000/,1738376866,,200,request
+c1a3de,127.0.0.1,GET,http://127.0.0.1:8000/,1738376951,,200,request
+1be89f,127.0.0.1,GET,http://127.0.0.1:8000/login,1738376957,,200,request
+1d4240,127.0.0.1,POST,http://127.0.0.1:8000/login,1738376975,,302,request
+b037f3,127.0.0.1,GET,http://127.0.0.1:8000/,1738376975,,200,request
+de7bc1,127.0.0.1,GET,http://127.0.0.1:8000/cart,1738376983,,200,request
+cc9a65,127.0.0.1,GET,http://127.0.0.1:8000/formation,1738376985,,200,request
+2c1fea,127.0.0.1,GET,http://127.0.0.1:8000/cart/add?id_lesson=1,1738376990,,302,request
+a34a4f,127.0.0.1,GET,http://127.0.0.1:8000/cart,1738376990,,200,request
+3f258f,127.0.0.1,GET,http://127.0.0.1:8000/create-checkout-session,1738376997,,302,request
