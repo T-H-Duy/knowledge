@@ -1,0 +1,3 @@
+<?php //0bd33d25c98bf3e9a7c3645933704086
+
+return [PHP_INT_MAX, 'bundles/apiplatform/swagger-ui/swagger-ui-bundle.js'];
