@@ -104,13 +104,7 @@ class __TwigTemplate_0ff017b4350dea1ef67e4a918b5e8fc8 extends Template
 <div class=\"container my-5\">
     <div class=\"row\">
         <div class=\"col-12 text-center\">
-            <div class=\"img mb-4\">
-                <img src=\"";
-        // line 12
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/image_home.png"), "html", null, true);
-        yield "\" alt=\"Image de présentation\" class=\"img-fluid\">
-            </div>
-            <h1>Bienvenue sur Knowledge-Learning</h1>
+            <h1>Plateforme Knowledge-Learning</h1>
         </div>
     </div>
     
@@ -118,26 +112,18 @@ class __TwigTemplate_0ff017b4350dea1ef67e4a918b5e8fc8 extends Template
         <div class=\"col-12 col-lg-8\">
             <h2>Présentation</h2>
             <p>
-                Knowledge-Learning est une plateforme e-learning dédiée à l’apprentissage dans des domaines aussi divers que la musique, la cuisine, l'informatique, et le jardinage. Pensée pour les passionnés et les curieux, elle propose des parcours structurés et enrichissants adaptés à tous les niveaux. Chaque cursus se compose de leçons interactives avec des fiches et des vidéos, permettant aux utilisateurs d’apprendre à leur propre rythme. Les apprenants peuvent valider leurs compétences en obtenant des certifications « Knowledge-Learning » après avoir complété l’ensemble des leçons d'un thème.
+                La société éditrice Knowledge est connue pour ses supports de formation vendus en librairie.
+                Knowledge propose des formations sous forme de livres ou de kits dans les domaines de la
+                musique, de l’informatique ou du jardinage, par exemple.
+                Knowledge propose désormais sa gamme de produits en ligne ses
+                formations sur un site e-learning».
             </p>
-        </div>
-
-        <div class=\"col-12 col-lg-4\">
-            
-            <h3>Les points forts</h3>
-            <ul>
-                <li>Choix de cursus couvrant de nombreux centres d’intérêt.</li>
-                <li>Possibilité d’acheter un cursus complet ou des leçons individuelles.</li>
-                <li>Apprentissage en ligne accessible depuis n’importe quel appareil.</li>
-                <li>À chaque leçon validée, un badge est attribué, attestant la maîtrise de cette leçon.</li>
-            </ul>
         </div>
     </div>
     
     <div class=\"row mt-4\">
         <div class=\"col-12 text-center\">
-            <p>Knowledge-Learning, pour apprendre, se perfectionner et valider ses connaissances dans ses passions !</p>
-            <p>N'hésitez pas et lancez-vous !</p>
+            <p>Inscrivez-vous et commencez à apprendre !</p>
         </div>
     </div>
 </div>
@@ -173,7 +159,7 @@ class __TwigTemplate_0ff017b4350dea1ef67e4a918b5e8fc8 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  110 => 12,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -188,10 +174,7 @@ class __TwigTemplate_0ff017b4350dea1ef67e4a918b5e8fc8 extends Template
 <div class=\"container my-5\">
     <div class=\"row\">
         <div class=\"col-12 text-center\">
-            <div class=\"img mb-4\">
-                <img src=\"{{ asset('assets/images/image_home.png') }}\" alt=\"Image de présentation\" class=\"img-fluid\">
-            </div>
-            <h1>Bienvenue sur Knowledge-Learning</h1>
+            <h1>Plateforme Knowledge-Learning</h1>
         </div>
     </div>
     
@@ -199,26 +182,18 @@ class __TwigTemplate_0ff017b4350dea1ef67e4a918b5e8fc8 extends Template
         <div class=\"col-12 col-lg-8\">
             <h2>Présentation</h2>
             <p>
-                Knowledge-Learning est une plateforme e-learning dédiée à l’apprentissage dans des domaines aussi divers que la musique, la cuisine, l'informatique, et le jardinage. Pensée pour les passionnés et les curieux, elle propose des parcours structurés et enrichissants adaptés à tous les niveaux. Chaque cursus se compose de leçons interactives avec des fiches et des vidéos, permettant aux utilisateurs d’apprendre à leur propre rythme. Les apprenants peuvent valider leurs compétences en obtenant des certifications « Knowledge-Learning » après avoir complété l’ensemble des leçons d'un thème.
+                La société éditrice Knowledge est connue pour ses supports de formation vendus en librairie.
+                Knowledge propose des formations sous forme de livres ou de kits dans les domaines de la
+                musique, de l’informatique ou du jardinage, par exemple.
+                Knowledge propose désormais sa gamme de produits en ligne ses
+                formations sur un site e-learning».
             </p>
-        </div>
-
-        <div class=\"col-12 col-lg-4\">
-            
-            <h3>Les points forts</h3>
-            <ul>
-                <li>Choix de cursus couvrant de nombreux centres d’intérêt.</li>
-                <li>Possibilité d’acheter un cursus complet ou des leçons individuelles.</li>
-                <li>Apprentissage en ligne accessible depuis n’importe quel appareil.</li>
-                <li>À chaque leçon validée, un badge est attribué, attestant la maîtrise de cette leçon.</li>
-            </ul>
         </div>
     </div>
     
     <div class=\"row mt-4\">
         <div class=\"col-12 text-center\">
-            <p>Knowledge-Learning, pour apprendre, se perfectionner et valider ses connaissances dans ses passions !</p>
-            <p>N'hésitez pas et lancez-vous !</p>
+            <p>Inscrivez-vous et commencez à apprendre !</p>
         </div>
     </div>
 </div>

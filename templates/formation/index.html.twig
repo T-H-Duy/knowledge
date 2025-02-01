@@ -21,12 +21,7 @@
           <h3>{{ cursus.nameCursus }}</h3>
         </div>
       </div>
-      <img
-        class="image-cursus"
-        src="{{ asset('assets/uploads/images/' ~ cursus.images) }}"
-        alt="{{ cursus.nameCursus }}"
-      />
-
+      
       <p class="mt-2">{{ cursus.description }}</p>
 
       <div class="d-flex flex-row">
@@ -60,12 +55,12 @@
         </div>
       {% elseif cursus in cursusWithSomeLessonsPurchased %}
         <div class="d-flex justify-content-evenly text-center mt-2">
-          <p>Vous avez acheté au moin une leçons dans ce cours. <b> Vous ne pouvez plus acheter ce cour</b>. <br> Si vous voulez acceder aux autres leçons, <b>veuillez les acheter individuellement.</b></p>
+          <p>Vous avez acheté au moins une leçons dans ce cours. <b> Vous ne pouvez plus acheter ce cours</b>. <br> Si vous voulez accèder aux autres leçons, <b>veuillez les acheter individuellement.</b></p>
         </div>
       {% else%}
         <div class="d-flex justify-content-evenly text-center mt-2">
           <p>L'ensemble du cursus coûte {{ cursus.price }}€</p>
-          <a href="{{ path('add_cart', { id_cursus: cursus.idCursus }) }}" class="btn mb-2">Acheter tout le cursus</a>
+          <a href="{{ path('add_cart', { id_cursus: cursus.idCursus }) }}" class="btn mb-2">Acheter la totalité de ce cursus</a>
         </div>
       {% endif %}
     </div>

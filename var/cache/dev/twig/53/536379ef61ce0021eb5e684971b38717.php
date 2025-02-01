@@ -14,7 +14,7 @@ use Twig\Source;
 use Twig\Template;
 use Twig\TemplateWrapper;
 
-/* _partials/footer.html.twig */
+/* /_partials/footer.html.twig */
 class __TwigTemplate_dfa99f1a612d4d7952c445c15a3766d6 extends Template
 {
     private Source $source;
@@ -39,10 +39,10 @@ class __TwigTemplate_dfa99f1a612d4d7952c445c15a3766d6 extends Template
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "_partials/footer.html.twig"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/_partials/footer.html.twig"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "_partials/footer.html.twig"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/_partials/footer.html.twig"));
 
         // line 1
         yield "<link rel=\"stylesheet\" href=\"";
@@ -66,10 +66,10 @@ class __TwigTemplate_dfa99f1a612d4d7952c445c15a3766d6 extends Template
 
         <div class=\"footer-info\">
             <address>
-                <p class=\"footer-title\">Informations de la société</p>
-                <p>Nom de la société: Knowledge</p>
-                <p>Adresse: 1 Rue de l'adresse, Centre ville du centre</p>
-                <p>adresse de contact: knowledge@learning.com</p>
+                <p>Knowledge E-learning</p>
+                <p>1 rue du Savoir</p>
+                <p>75001 Paris</p>
+                <a href=\"https://www.knowledge-elearning.fr\">knowledge-elearning.fr</a>
             </address>
         </div>
     </div>
@@ -88,7 +88,7 @@ class __TwigTemplate_dfa99f1a612d4d7952c445c15a3766d6 extends Template
      */
     public function getTemplateName(): string
     {
-        return "_partials/footer.html.twig";
+        return "/_partials/footer.html.twig";
     }
 
     /**
@@ -122,13 +122,13 @@ class __TwigTemplate_dfa99f1a612d4d7952c445c15a3766d6 extends Template
 
         <div class=\"footer-info\">
             <address>
-                <p class=\"footer-title\">Informations de la société</p>
-                <p>Nom de la société: Knowledge</p>
-                <p>Adresse: 1 Rue de l'adresse, Centre ville du centre</p>
-                <p>adresse de contact: knowledge@learning.com</p>
+                <p>Knowledge E-learning</p>
+                <p>1 rue du Savoir</p>
+                <p>75001 Paris</p>
+                <a href=\"https://www.knowledge-elearning.fr\">knowledge-elearning.fr</a>
             </address>
         </div>
     </div>
-</footer>", "_partials/footer.html.twig", "E:\\CEF\\Devoirs\\Bilan 3 - Knowledge Learning\\knowledge_learning-main\\knowledge_learning\\templates\\_partials\\footer.html.twig");
+</footer>", "/_partials/footer.html.twig", "E:\\CEF\\Devoirs\\Bilan 3 - Knowledge Learning\\knowledge_learning-main\\knowledge_learning\\templates\\_partials\\footer.html.twig");
     }
 }

@@ -27,3 +27,10 @@ cc9a65,127.0.0.1,GET,http://127.0.0.1:8000/formation,1738376985,,200,request
 2c1fea,127.0.0.1,GET,http://127.0.0.1:8000/cart/add?id_lesson=1,1738376990,,302,request
 a34a4f,127.0.0.1,GET,http://127.0.0.1:8000/cart,1738376990,,200,request
 3f258f,127.0.0.1,GET,http://127.0.0.1:8000/create-checkout-session,1738376997,,302,request
+b1b097,127.0.0.1,GET,http://127.0.0.1:8000/,1738377508,,200,request
+9e38ef,127.0.0.1,GET,http://127.0.0.1:8000/,1738377542,,200,request
+e75980,127.0.0.1,GET,http://127.0.0.1:8000/api,1738377594,,200,request
+cb474f,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1738377595,3d532e,404,request
+3d532e,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1738377595,,404,request
+788250,127.0.0.1,GET,http://127.0.0.1:8000/,1738429593,,200,request
+f8ecb0,127.0.0.1,GET,http://127.0.0.1:8000/,1738429954,,200,request

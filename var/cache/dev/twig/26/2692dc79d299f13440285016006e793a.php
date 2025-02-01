@@ -14,7 +14,7 @@ use Twig\Source;
 use Twig\Template;
 use Twig\TemplateWrapper;
 
-/* _partials/flash.html.twig */
+/* /_partials/flash.html.twig */
 class __TwigTemplate_3c2bccaff0354971f1f5e59d9c04ee3a extends Template
 {
     private Source $source;
@@ -39,10 +39,10 @@ class __TwigTemplate_3c2bccaff0354971f1f5e59d9c04ee3a extends Template
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "_partials/flash.html.twig"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/_partials/flash.html.twig"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "_partials/flash.html.twig"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/_partials/flash.html.twig"));
 
         // line 1
         yield "<link rel=\"stylesheet\" href=\"";
@@ -86,7 +86,7 @@ class __TwigTemplate_3c2bccaff0354971f1f5e59d9c04ee3a extends Template
      */
     public function getTemplateName(): string
     {
-        return "_partials/flash.html.twig";
+        return "/_partials/flash.html.twig";
     }
 
     /**
@@ -116,6 +116,6 @@ class __TwigTemplate_3c2bccaff0354971f1f5e59d9c04ee3a extends Template
   </div>
   {% endfor %}
 </div>
-", "_partials/flash.html.twig", "E:\\CEF\\Devoirs\\Bilan 3 - Knowledge Learning\\knowledge_learning-main\\knowledge_learning\\templates\\_partials\\flash.html.twig");
+", "/_partials/flash.html.twig", "E:\\CEF\\Devoirs\\Bilan 3 - Knowledge Learning\\knowledge_learning-main\\knowledge_learning\\templates\\_partials\\flash.html.twig");
     }
 }

@@ -90,8 +90,7 @@ class __TwigTemplate_4110d7f4c101f10bf8731b267dc26d0a extends Template
         yield "
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"></script>
     </body>
-</html>
-";
+</html>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -241,7 +240,7 @@ class __TwigTemplate_4110d7f4c101f10bf8731b267dc26d0a extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  202 => 18,  179 => 12,  168 => 13,  165 => 12,  152 => 11,  141 => 9,  128 => 8,  105 => 5,  90 => 20,  87 => 19,  84 => 18,  81 => 17,  79 => 16,  75 => 14,  73 => 11,  70 => 10,  68 => 8,  63 => 6,  59 => 5,  53 => 1,);
+        return array (  201 => 18,  178 => 12,  167 => 13,  164 => 12,  151 => 11,  140 => 9,  127 => 8,  104 => 5,  90 => 20,  87 => 19,  84 => 18,  81 => 17,  79 => 16,  75 => 14,  73 => 11,  70 => 10,  68 => 8,  63 => 6,  59 => 5,  53 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -268,7 +267,6 @@ class __TwigTemplate_4110d7f4c101f10bf8731b267dc26d0a extends Template
 
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"></script>
     </body>
-</html>
-", "base.html.twig", "E:\\CEF\\Devoirs\\Bilan 3 - Knowledge Learning\\knowledge_learning-main\\knowledge_learning\\templates\\base.html.twig");
+</html>", "base.html.twig", "E:\\CEF\\Devoirs\\Bilan 3 - Knowledge Learning\\knowledge_learning-main\\knowledge_learning\\templates\\base.html.twig");
     }
 }
