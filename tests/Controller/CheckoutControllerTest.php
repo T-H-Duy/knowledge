@@ -31,7 +31,7 @@ class CheckoutControllerTest extends WebTestCase
 
         // Récupérer l'utilisateur de test
         $userRepository = $this->entityManager->getRepository(User::class);
-        $user = $userRepository->findOneBy(['email' => 'janedoe@gmail.com']);
+        $user = $userRepository->findOneBy(['email' => 'johndoe@gmail.com']);
 
         // Authentification de l'utilisateur de test
         $this->client->loginUser($user);
@@ -58,7 +58,7 @@ class CheckoutControllerTest extends WebTestCase
 
         // Récupération du panier
         $userRepository = $this->entityManager->getRepository(User::class);
-        $user = $userRepository->findOneBy(['email' => 'janedoe@gmail.com']);
+        $user = $userRepository->findOneBy(['email' => 'johndoe@gmail.com']);
 
         $cartRepository = $this->entityManager->getRepository(Cart::class);
         $cart = $cartRepository->findBy(['user' => $user]);

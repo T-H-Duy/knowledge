@@ -25,16 +25,16 @@ class SecurityControllerTest extends WebTestCase
 
         //Verification si l'utilisateur existe déjà
         $userRepository = $this->entityManager->getRepository(User::class);
-        $existingUser = $userRepository->findOneBy(['email'=>'janedoe@gmail.com']);
+        $existingUser = $userRepository->findOneBy(['email'=>'johndoe@gmail.com']);
 
         //création de l'utilisateur si il n'existe pas
         if(!$existingUser){
             $user = new User();
-            $user -> setUsername('Jane Doe');
-            $user -> setEmail('janedoe@gmail.com');
+            $user -> setUsername('John Doe');
+            $user -> setEmail('johndoe@gmail.com');
             $user -> setRoles(['ROLE_USER']);
             $user -> setVerified(true);
-            $user -> setPassword($this->passwordHasher->hashPassword($user,'admin0123'));
+            $user -> setPassword($this->passwordHasher->hashPassword($user,'admin012345'));
 
             $this->entityManager->persist($user);
             $this->entityManager->flush();
@@ -52,8 +52,8 @@ class SecurityControllerTest extends WebTestCase
 
         //soumission du formulaire d'inscription
         $form = $crawler->selectButton('Connexion')->form([
-            'email'=>'janedoe@gmail.com',
-            'password'=>'admin0123',
+            'email'=>'johndoe@gmail.com',
+            'password'=>'admin012345',
         ]);
 
         $this->client->submit($form);

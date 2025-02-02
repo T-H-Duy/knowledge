@@ -19,12 +19,12 @@ class FormationControllerTest extends WebTestCase
         $cursus = new Cursus;
         $cursus -> setNameCursus('Test Cursus');
         $cursus -> setPrice(35);
-        $cursus -> setDescription('Description du Test Cursus');
+        $cursus -> setDescription('Description du test Cursus');
         $cursus -> setTheme($theme);
 
         $this->assertSame('Test Cursus', $cursus->getNameCursus());
         $this->assertEquals(35, $cursus->getPrice());
-        $this->assertSame('Description du Test Cursus', $cursus->getDescription());
+        $this->assertSame('Description du test Cursus', $cursus->getDescription());
         $this->assertSame($theme, $cursus->getTheme());
 
         $lesson = new Lesson;
