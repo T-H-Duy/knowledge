@@ -101,9 +101,9 @@ class __TwigTemplate_1eb379f13af88ac0fa51eb81efc9ba3a extends Template
 
 <div class=\"container my-2\">
 
-    <h1>Paiement réussi !</h1>
+    <h1>Paiement accepté !</h1>
 
-    <p>Merci pour votre achat. Vous pouvez maintenant accéder à vos leçons.</p>
+    <p>Merci pour votre achat.</p>
 
     <a href=\"/formation\">Accéder au cours </a>
 
@@ -153,9 +153,9 @@ class __TwigTemplate_1eb379f13af88ac0fa51eb81efc9ba3a extends Template
 
 <div class=\"container my-2\">
 
-    <h1>Paiement réussi !</h1>
+    <h1>Paiement accepté !</h1>
 
-    <p>Merci pour votre achat. Vous pouvez maintenant accéder à vos leçons.</p>
+    <p>Merci pour votre achat.</p>
 
     <a href=\"/formation\">Accéder au cours </a>
 

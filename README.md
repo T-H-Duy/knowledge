@@ -19,8 +19,8 @@ Création des fixtures:
  - php bin/console doctrine:fixtures:load
 
 3/ Connexion et Faire un achat:
-- identifiant admin: janedoe@gmail.com
-- mdp: admin0123
+- identifiant admin: johndoe@gmail.com
+- mdp: admin012345
 - code de carte : 4242 4242 4242 4242
 - la date et le code secret n'a pas d'importance
 

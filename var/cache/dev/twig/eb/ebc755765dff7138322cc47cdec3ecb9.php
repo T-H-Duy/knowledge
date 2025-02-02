@@ -207,41 +207,34 @@ $context["cursus"], (isset($context["cursusWithAllLessonsPurchased"]) || array_k
           <p>Vous avez toutes les leçons de ce cursus.</p>
         </div>
       ";
-                } elseif (CoreExtension::inFilter(                // line 56
-$context["cursus"], (isset($context["cursusWithSomeLessonsPurchased"]) || array_key_exists("cursusWithSomeLessonsPurchased", $context) ? $context["cursusWithSomeLessonsPurchased"] : (function () { throw new RuntimeError('Variable "cursusWithSomeLessonsPurchased" does not exist.', 56, $this->source); })()))) {
+                } else {
                     // line 57
                     yield "        <div class=\"d-flex justify-content-evenly text-center mt-2\">
-          <p>Vous avez acheté au moins une leçons dans ce cours. <b> Vous ne pouvez plus acheter ce cours</b>. <br> Si vous voulez accèder aux autres leçons, <b>veuillez les acheter individuellement.</b></p>
-        </div>
-      ";
-                } else {
-                    // line 61
-                    yield "        <div class=\"d-flex justify-content-evenly text-center mt-2\">
           <p>L'ensemble du cursus coûte ";
-                    // line 62
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["cursus"], "price", [], "any", false, false, false, 62), "html", null, true);
+                    // line 58
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["cursus"], "price", [], "any", false, false, false, 58), "html", null, true);
                     yield "€</p>
           <a href=\"";
-                    // line 63
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_cart", ["id_cursus" => CoreExtension::getAttribute($this->env, $this->source, $context["cursus"], "idCursus", [], "any", false, false, false, 63)]), "html", null, true);
-                    yield "\" class=\"btn mb-2\">Acheter la totalité de ce cursus</a>
+                    // line 59
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_cart", ["id_cursus" => CoreExtension::getAttribute($this->env, $this->source, $context["cursus"], "idCursus", [], "any", false, false, false, 59)]), "html", null, true);
+                    yield "\" class=\"btn mb-2\">Acheter ce cursus</a>
         </div>
       ";
                 }
-                // line 66
+                // line 62
                 yield "    </div>
     ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_key'], $context['cursus'], $context['_parent']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 68
+            // line 64
             yield "    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_key'], $context['theme'], $context['_parent']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 69
+        // line 65
         yield "  </div>
 </div>
 ";
@@ -275,7 +268,7 @@ $context["cursus"], (isset($context["cursusWithSomeLessonsPurchased"]) || array_
      */
     public function getDebugInfo(): array
     {
-        return array (  245 => 69,  239 => 68,  232 => 66,  226 => 63,  222 => 62,  219 => 61,  213 => 57,  211 => 56,  206 => 53,  204 => 52,  199 => 49,  197 => 48,  194 => 47,  185 => 43,  179 => 41,  173 => 39,  171 => 38,  164 => 34,  160 => 33,  155 => 31,  151 => 29,  147 => 28,  141 => 25,  134 => 21,  129 => 18,  125 => 17,  120 => 15,  117 => 14,  113 => 13,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
+        return array (  238 => 65,  232 => 64,  225 => 62,  219 => 59,  215 => 58,  212 => 57,  206 => 53,  204 => 52,  199 => 49,  197 => 48,  194 => 47,  185 => 43,  179 => 41,  173 => 39,  171 => 38,  164 => 34,  160 => 33,  155 => 31,  151 => 29,  147 => 28,  141 => 25,  134 => 21,  129 => 18,  125 => 17,  120 => 15,  117 => 14,  113 => 13,  100 => 4,  87 => 3,  64 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -335,14 +328,10 @@ $context["cursus"], (isset($context["cursusWithSomeLessonsPurchased"]) || array_
         <div class=\"d-flex justify-content-evenly text-center mt-2\">
           <p>Vous avez toutes les leçons de ce cursus.</p>
         </div>
-      {% elseif cursus in cursusWithSomeLessonsPurchased %}
-        <div class=\"d-flex justify-content-evenly text-center mt-2\">
-          <p>Vous avez acheté au moins une leçons dans ce cours. <b> Vous ne pouvez plus acheter ce cours</b>. <br> Si vous voulez accèder aux autres leçons, <b>veuillez les acheter individuellement.</b></p>
-        </div>
       {% else%}
         <div class=\"d-flex justify-content-evenly text-center mt-2\">
           <p>L'ensemble du cursus coûte {{ cursus.price }}€</p>
-          <a href=\"{{ path('add_cart', { id_cursus: cursus.idCursus }) }}\" class=\"btn mb-2\">Acheter la totalité de ce cursus</a>
+          <a href=\"{{ path('add_cart', { id_cursus: cursus.idCursus }) }}\" class=\"btn mb-2\">Acheter ce cursus</a>
         </div>
       {% endif %}
     </div>
