@@ -134,16 +134,12 @@ class __TwigTemplate_6edcf8cfc5825ffdbf9fb889d39257f2 extends Template
         yield "
       <h1 class=\"h3 mb-3 font-weight-normal\">Connexion</h1>
 
-      <div class=\"container separation-form\">
-        <div class=\"separation\"></div>
-      </div>
-
       <label for=\"inputEmail\">Email</label>
       <input
         type=\"email\"
         value=\"";
-        // line 27
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 27, $this->source); })()), "html", null, true);
+        // line 23
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 23, $this->source); })()), "html", null, true);
         yield "\"
         name=\"email\"
         id=\"inputEmail\"
@@ -163,7 +159,7 @@ class __TwigTemplate_6edcf8cfc5825ffdbf9fb889d39257f2 extends Template
       />
 
       <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 45
+        // line 41
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         yield "\" />
 
@@ -207,7 +203,7 @@ class __TwigTemplate_6edcf8cfc5825ffdbf9fb889d39257f2 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  167 => 45,  146 => 27,  134 => 17,  128 => 14,  124 => 13,  121 => 12,  118 => 11,  112 => 9,  109 => 8,  107 => 7,  98 => 2,  41 => 1,);
+        return array (  163 => 41,  142 => 23,  134 => 17,  128 => 14,  124 => 13,  121 => 12,  118 => 11,  112 => 9,  109 => 8,  107 => 7,  98 => 2,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -230,10 +226,6 @@ class __TwigTemplate_6edcf8cfc5825ffdbf9fb889d39257f2 extends Template
       {% endif %}
 
       <h1 class=\"h3 mb-3 font-weight-normal\">Connexion</h1>
-
-      <div class=\"container separation-form\">
-        <div class=\"separation\"></div>
-      </div>
 
       <label for=\"inputEmail\">Email</label>
       <input

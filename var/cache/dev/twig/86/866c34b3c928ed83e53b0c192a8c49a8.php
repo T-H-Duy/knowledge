@@ -190,7 +190,7 @@ $context["item"], "lesson", [], "any", false, false, false, 42)) {
         yield "</table>
     
     <div class=\"button\">
-        <a href=\"/create-checkout-session\" class=\"btn\">valider la commande</a>
+        <a href=\"/create-checkout-session\" class=\"btn\">Valider la commande</a>
     </div>
     
    </div>
@@ -289,7 +289,7 @@ $context["item"], "lesson", [], "any", false, false, false, 42)) {
 </table>
     
     <div class=\"button\">
-        <a href=\"/create-checkout-session\" class=\"btn\">valider la commande</a>
+        <a href=\"/create-checkout-session\" class=\"btn\">Valider la commande</a>
     </div>
     
    </div>

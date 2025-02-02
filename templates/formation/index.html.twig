@@ -60,7 +60,7 @@
       {% else%}
         <div class="d-flex justify-content-evenly text-center mt-2">
           <p>L'ensemble du cursus coûte {{ cursus.price }}€</p>
-          <a href="{{ path('add_cart', { id_cursus: cursus.idCursus }) }}" class="btn mb-2">Acheter la totalité de ce cursus</a>
+          <a href="{{ path('add_cart', { id_cursus: cursus.idCursus }) }}" class="btn mb-2">Acheter ce cursus</a>
         </div>
       {% endif %}
     </div>

@@ -116,38 +116,28 @@ class __TwigTemplate_6890ef5d42952ba57e3666eb037541c5 extends Template
         // line 15
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["lesson"]) || array_key_exists("lesson", $context) ? $context["lesson"] : (function () { throw new RuntimeError('Variable "lesson" does not exist.', 15, $this->source); })()), "content", [], "any", false, false, false, 15), "html", null, true);
         yield "</p>
-        <video src=\"";
-        // line 16
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("assets/uploads/videos/" . CoreExtension::getAttribute($this->env, $this->source, (isset($context["lesson"]) || array_key_exists("lesson", $context) ? $context["lesson"] : (function () { throw new RuntimeError('Variable "lesson" does not exist.', 16, $this->source); })()), "videoUrl", [], "any", false, false, false, 16))), "html", null, true);
-        yield "\" controls></video>
       </div>
 
       ";
-        // line 19
-        if ((isset($context["certification"]) || array_key_exists("certification", $context) ? $context["certification"] : (function () { throw new RuntimeError('Variable "certification" does not exist.', 19, $this->source); })())) {
-            // line 20
+        // line 18
+        if ((isset($context["certification"]) || array_key_exists("certification", $context) ? $context["certification"] : (function () { throw new RuntimeError('Variable "certification" does not exist.', 18, $this->source); })())) {
+            // line 19
             yield "      <div class=\"mt-2 certification text-center\">
         
           <h2 class=\"titre-certif\">Certification Obtenue ! </h2>
         
         <div class=\"block-certif\">
-          <img class=\"certification-img\" src=\"";
-            // line 25
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("assets/uploads/images/certification/" . CoreExtension::getAttribute($this->env, $this->source, (isset($context["lesson"]) || array_key_exists("lesson", $context) ? $context["lesson"] : (function () { throw new RuntimeError('Variable "lesson" does not exist.', 25, $this->source); })()), "certificationImage", [], "any", false, false, false, 25))), "html", null, true);
-            yield "\" alt=\"";
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["lesson"]) || array_key_exists("lesson", $context) ? $context["lesson"] : (function () { throw new RuntimeError('Variable "lesson" does not exist.', 25, $this->source); })()), "nameLesson", [], "any", false, false, false, 25), "html", null, true);
-            yield "\">
           <p>  Obtenue le : ";
-            // line 26
-            yield ((CoreExtension::getAttribute($this->env, $this->source, (isset($context["certification"]) || array_key_exists("certification", $context) ? $context["certification"] : (function () { throw new RuntimeError('Variable "certification" does not exist.', 26, $this->source); })()), "obtainedAt", [], "any", false, false, false, 26)) ? ($this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Twig\Extension\CoreExtension']->formatDate(CoreExtension::getAttribute($this->env, $this->source, (isset($context["certification"]) || array_key_exists("certification", $context) ? $context["certification"] : (function () { throw new RuntimeError('Variable "certification" does not exist.', 26, $this->source); })()), "obtainedAt", [], "any", false, false, false, 26), "d-m-Y"), "html", null, true)) : ("N/A"));
+            // line 24
+            yield ((CoreExtension::getAttribute($this->env, $this->source, (isset($context["certification"]) || array_key_exists("certification", $context) ? $context["certification"] : (function () { throw new RuntimeError('Variable "certification" does not exist.', 24, $this->source); })()), "obtainedAt", [], "any", false, false, false, 24)) ? ($this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Twig\Extension\CoreExtension']->formatDate(CoreExtension::getAttribute($this->env, $this->source, (isset($context["certification"]) || array_key_exists("certification", $context) ? $context["certification"] : (function () { throw new RuntimeError('Variable "certification" does not exist.', 24, $this->source); })()), "obtainedAt", [], "any", false, false, false, 24), "d-m-Y"), "html", null, true)) : ("N/A"));
             yield "</p>
         </div>
       </div>
       ";
         } else {
-            // line 30
+            // line 28
             yield "       <form action=\"";
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("validate_lesson", ["id_lesson" => CoreExtension::getAttribute($this->env, $this->source, (isset($context["lesson"]) || array_key_exists("lesson", $context) ? $context["lesson"] : (function () { throw new RuntimeError('Variable "lesson" does not exist.', 30, $this->source); })()), "idLesson", [], "any", false, false, false, 30)]), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("validate_lesson", ["id_lesson" => CoreExtension::getAttribute($this->env, $this->source, (isset($context["lesson"]) || array_key_exists("lesson", $context) ? $context["lesson"] : (function () { throw new RuntimeError('Variable "lesson" does not exist.', 28, $this->source); })()), "idLesson", [], "any", false, false, false, 28)]), "html", null, true);
             yield "\" method=\"post\">
           <div class=\"button\">
             <button type=\"submit \" class=\"btn mt-3\">Valider la leçon</button>
@@ -155,7 +145,7 @@ class __TwigTemplate_6890ef5d42952ba57e3666eb037541c5 extends Template
        </form>
       ";
         }
-        // line 36
+        // line 34
         yield "      
     </div>
   </div>
@@ -191,7 +181,7 @@ class __TwigTemplate_6890ef5d42952ba57e3666eb037541c5 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  159 => 36,  149 => 30,  142 => 26,  136 => 25,  129 => 20,  127 => 19,  121 => 16,  117 => 15,  107 => 8,  98 => 3,  41 => 1,);
+        return array (  149 => 34,  139 => 28,  132 => 24,  125 => 19,  123 => 18,  117 => 15,  107 => 8,  98 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -211,7 +201,6 @@ class __TwigTemplate_6890ef5d42952ba57e3666eb037541c5 extends Template
 
       <div class=\"block-center\">
         <p>{{ lesson.content }}</p>
-        <video src=\"{{ asset('assets/uploads/videos/' ~ lesson.videoUrl) }}\" controls></video>
       </div>
 
       {% if certification %}
@@ -220,7 +209,6 @@ class __TwigTemplate_6890ef5d42952ba57e3666eb037541c5 extends Template
           <h2 class=\"titre-certif\">Certification Obtenue ! </h2>
         
         <div class=\"block-certif\">
-          <img class=\"certification-img\" src=\"{{ asset('assets/uploads/images/certification/'~ lesson.certificationImage) }}\" alt=\"{{lesson.nameLesson}}\">
           <p>  Obtenue le : {{ certification.obtainedAt ? certification.obtainedAt|date('d-m-Y') : 'N/A' }}</p>
         </div>
       </div>

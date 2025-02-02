@@ -3,12 +3,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f1f8fc !important;
+    background-color: #f1f8fc;
 }
 
 .header-logo img {
-    width: 150px !important;
-    background-color: #f1f8fc !important;
+    width: 150px;
+    background-color: #f1f8fc;
 }
 
 .header-nav ul {
@@ -30,7 +30,7 @@
 /*Style des lien en hover*/
 
 .navbar-nav .nav-link:hover {
-    color: #f1f8fc !important;
+    color: #f1f8fc;
     font-weight:bold;
     padding: 5px;
     border-radius: 50px;
@@ -40,7 +40,7 @@
 
 /* Style des liens actifs */
 .navbar-nav .nav-link.active {
-    color: #f1f8fc !important;
+    color: #f1f8fc;
     font-weight:bold;
     padding: 5px;
     border-radius: 50px;

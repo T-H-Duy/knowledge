@@ -3,11 +3,11 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f1f8fc !important;
+    background-color: #f1f8fc;
 }
 
 .footer-logo img {
-    width:150px !important;
+    width:150px;
 }
 
 .footer-info{
@@ -20,5 +20,5 @@
 }
 
 .logo{
-    background-color: #f1f8fc !important;
+    background-color: #f1f8fc;
 }

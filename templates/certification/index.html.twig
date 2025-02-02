@@ -9,8 +9,7 @@
 
     {% if certifications is empty %}
     <p>
-      Vous n'avez pas encore de certifications. Continuez à apprendre et validez vos leçons pour en
-      obtenir !
+      Aucune certification
     </p>
 
     {% else %} 
@@ -25,11 +24,6 @@
     <ul class="ul-cursus">
       {% for lessonData in cursusData.lessonsList %}
       <li class="li-lesson">
-        <img
-          class="certification-img"
-          src="{{ asset('assets/uploads/images/certification/'~ lessonData.lesson.certificationImage) }}"
-          alt="{{ lessonData.lesson.nameLesson }}"
-        />
         <p>{{ lessonData.lesson.nameLesson }}</p>
         <p>Obtenue le : {{lessonData.obtainedAt|date('d/m/Y')}}</p>
       </li>

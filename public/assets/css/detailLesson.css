@@ -1,7 +1,7 @@
 .btn{
     height: 40px;
     width: 150px;
-   background-color: #00497c !important;
+   background-color: #00497c;
     border: #00497c 1px solid;
     color: white;
     border-radius: 50px;
@@ -14,7 +14,7 @@
 }
 
 video{
-    width: 100% !important;
+    width: 100%;
 }
 
 .block{
@@ -44,7 +44,7 @@ video{
     display: flex;
     flex-direction: column;
     box-shadow: 10px 5px 15px #384050;
-    margin-top: 1rem !important;
+    margin-top: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
