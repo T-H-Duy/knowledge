@@ -33,41 +33,41 @@ class CartController extends AbstractController
     #[Route('/cart/add',name:'add_cart')]
     public function addToCart(Request $request, EntityManagerInterface $em, Security $security): Response
     {
-        //Verification si l'utilisateur est connecté
+        //Check if user is connected
         $user = $security->getUser();
-            //Redirection si il n'est pas connecter
+            //Redirect if user is not connected
             if(!$user){
                 return $this->redirectToRoute('app_login');
             }
 
-        //Récupération des paramètres depuis la requete(id_cursus ou id_lesson)
+        //Get settings from request (id_cursus ou id_lesson)
         $cursusId = $request ->get('id_cursus');
         $lessonId = $request -> get('id_lesson');
 
-        //Recherche des entité dans la base de donné 
+        //Search for entities in Database
         $cursus = $cursusId ? $em -> getRepository(Cursus::class)->find($cursusId): null;
         $lesson = $lessonId ? $em -> getRepository(Lesson::class)->find($lessonId): null;
        
 
-        //Recherche si l'élèment existe deja dans le panier de l'utilisateur
+        //Check if item already in cart
         $cartItem = $em->getRepository(Cart::class)->findOneBy([
             'user' => $user,
             'cursus' => $cursus,
             'lesson' => $lesson,
         ]);
-            //Si il existe deja dans le panier, message d'erreur
+            //Display error message if item already in cart
             if($cartItem){
                 $this->addFlash('error', 'Cet élèment est deja dans votre panier.');
                 return $this->redirectToRoute('app_formation');
             }
         
-        //Création d'un nouvel élèment dans le panier
+        //Put new item in cart
         $cartItem = new Cart();
         $cartItem -> setUser($user)
                   ->setCursus($cursus)
                   ->setLesson($lesson)
                   ->setCreatedAt(new \DateTimeImmutable());
-        //Enregistrement  du nouvel élèment
+        //Save new item
         try {
             $em->persist($cartItem);
             $em->flush();
@@ -82,7 +82,7 @@ class CartController extends AbstractController
     #[Route('cart/remove/{id_cart}', name:'remove_cart_item', methods:['POST'])]
     public function removeCartItem(int $id_cart, EntityManagerInterface $em, Security $security):Response
     {   
-        //Récupération de l'utilisateur connecter
+        //Get connected user
         $user = $security->getUser();
         if(!$user){
             $this->addFlash('error', 'Vous devez vous connecter pour effectuer cette action !');
@@ -90,7 +90,7 @@ class CartController extends AbstractController
         }
 
         $cartItem = $em->getRepository(Cart::class)->find($id_cart);
-        //suppression de l'élément
+        //Delete item in cart
         $em->remove($cartItem);
         $em->flush();
         $this->addFlash('success', 'L\'élément à bien était supprimer de votre panier!');

@@ -13,11 +13,11 @@ class CertificationController extends AbstractController
     #[Route('/certifications', name: 'app_certifications')]
     public function index(CertificationRepository $certificationRepository, ThemeRepository $themeRepository): Response
     {
-        //recupération de l'utilisateur
+        //Get user
         $user = $this->getUser();
-        //récupération des certification obtenue
+        //Get certification obtained
         $certifications = $certificationRepository->findBy(['user'=>$user]);
-        //Récupération de tous les themes ,cursus et leçon
+        //Get all themes, courses and lessons
         $themes = $themeRepository->findAll();
 
         $data=[];

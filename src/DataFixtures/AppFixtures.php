@@ -32,7 +32,6 @@ class AppFixtures extends Fixture
 
             $manager->persist($user);
 
-        //boucle pour créer aleatoirement des utilisateurs
         for ($i = 0 ; $i <10 ; $i++){
             $user = new User();
             $user ->setUsername($faker->userName())

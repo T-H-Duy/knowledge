@@ -105,7 +105,7 @@ class Cursus
         return $this;
     }
 
-    // Méthode appelée avant la création en base de données
+    // Create Database
     #[ORM\PrePersist]
     public function setCreatedAtValue(): void
     {
@@ -113,7 +113,7 @@ class Cursus
         $this->updatedAt = new \DateTimeImmutable();
     }
 
-    // Méthode appelée avant chaque mise à jour en base de données
+    // Update database
     #[ORM\PreUpdate]
     public function setUpdatedAtValue(): void
     {

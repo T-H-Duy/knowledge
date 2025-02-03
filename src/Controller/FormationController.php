@@ -20,7 +20,7 @@ class FormationController extends AbstractController
         $user = $this->getUser();
         $themes = $themeRepository -> findAll();
 
-        //Récupération des cours et des lessons acheter par l'utilisateur
+        //Get already purchased courses and lessons
         $purchasedCursus = [];
         $purchasedLessons = [];
 
@@ -34,10 +34,9 @@ class FormationController extends AbstractController
             }
         }
 
-        //Logique afin d'evité qu'un utilisateur achete un cursus alor qu'il à deja les lessons
-            // Vérifie si l'utilisateur possède déjà toutes les leçons d'un cours
+            // Check if user already purchased all lessons from course
             $cursusWithAllLessonsPurchased = [];
-            // Vérifie si l'utilisateur possède une leçon dans un cours
+            // Check if user already purchased at least one lesson from a course
             $cursusWithSomeLessonsPurchased = [];
             foreach ($themes as $theme) {
                 foreach ($theme->getCursuses() as $cursus) {
@@ -77,10 +76,10 @@ class FormationController extends AbstractController
         if(!$lesson){
             throw $this->createNotFoundException('La leçon n\'existe pas' );
         }
-        //Vérification de l'achat de la lecon par l'utilisateur
+        //Check lesson purchase
         $purchase = $purchaseRepository->findOneBy(['user'=>$user, 'lesson'=>$lesson]);
         if (!$purchase) {
-            //Vérification de l'achat d'une lecon par le bier du cursus
+            //Check lesson purchase via course
             $cursusPurchase = $purchaseRepository->findBy(['user'=>$user, 'cursus'=>$lesson->getCursus()]);
             if(empty($cursusPurchase)){
                 $this->addFlash('error', 'Vous n\'avez pas acheter cette leçon.');
@@ -89,7 +88,7 @@ class FormationController extends AbstractController
             
         }
 
-        //Verifie si l'utilisateur a la certification de la leçon
+        //Check if user has lesson certification
 
         $certification = $certificationRepository->findOneBy(['user'=>$user, 'lesson'=>$lesson]);
         return $this->render('formation/detailLesson.html.twig',[

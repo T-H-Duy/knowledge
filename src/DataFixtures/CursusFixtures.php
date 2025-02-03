@@ -30,8 +30,8 @@ class CursusFixtures extends Fixture
         $themeCuisine -> setNameTheme('Cuisine');
         $manager-> persist($themeCuisine);
 
-        //Cursus
-        //Cursus Musique
+        //Courses
+        //Music course
         $guitare=new Cursus();
         $guitare-> setNameCursus("Cursus d'initiation à la guitare")
                 -> setPrice(50)
@@ -50,7 +50,7 @@ class CursusFixtures extends Fixture
                 ->setUpdatedAt(new \DateTimeImmutable());
         $manager-> persist($piano);
 
-        //Cursus Informatique
+        //IT course
         $web=new Cursus();
         $web-> setNameCursus("Cursus d'initiation au developpement web")
                 -> setPrice(60)
@@ -61,7 +61,7 @@ class CursusFixtures extends Fixture
         $manager-> persist($web);
 
 
-        //Cursus Jardinage
+        //Gardening course
         $jardinage=new Cursus();
         $jardinage-> setNameCursus("Cursus d'initiation au jardinage")
                 -> setPrice(30)
@@ -71,7 +71,7 @@ class CursusFixtures extends Fixture
                 ->setUpdatedAt(new \DateTimeImmutable());
         $manager-> persist($jardinage);
 
-        //Cursus Cuisine
+        //Cooking course
         $cuisine=new Cursus();
         $cuisine-> setNameCursus("Cursus d'initiation à la cuisine")
                 -> setPrice(44)
@@ -86,7 +86,7 @@ class CursusFixtures extends Fixture
                 -> setDescription('Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quis mollitia velit quod rem porro, enim sapiente nobis sed amet maxime. Soluta assumenda quis earum, veniam fugit nobis sint officia?');
         $manager-> persist($dressage);
 
-        //Lesson
+        //Lessons
         //Musique-guitare
         $lesson1guitare = new Lesson;
         $lesson1guitare -> setNameLesson('Leçon 1: Découverte de l\'instrument')
