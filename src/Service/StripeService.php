@@ -21,9 +21,9 @@ class StripeService
         $lineItems = [];
 
         foreach($cartItems as $item){
-            //Determine le nom du cursus ou de la leçon
+            //Set the name of the course or lesson
             $name = $item->getCursus() ? $item ->getCursus()->getNameCursus() : $item ->getLesson()->getNameLesson();
-            //Determine le prix du cursus ou de la leçon
+            //Set the price of the course or lesson
             $price = $item->getCursus() ? $item ->getCursus()->getPrice() : $item ->getLesson()->getPrice();
             $quantity=1;
 

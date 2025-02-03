@@ -16,18 +16,18 @@ class SecurityControllerTest extends WebTestCase
   
     protected function setUp():void
     {
-        //Récupération des services necessaires
+        //Retrieve the necessary services
         $this->client = static::createClient();
         $container = static::getContainer();
 
         $this->entityManager = $container->get(EntityManagerInterface::class);
         $this->passwordHasher = $container->get(UserPasswordHasherInterface::class);
 
-        //Verification si l'utilisateur existe déjà
+        //Check if user already exists
         $userRepository = $this->entityManager->getRepository(User::class);
         $existingUser = $userRepository->findOneBy(['email'=>'johndoe@gmail.com']);
 
-        //création de l'utilisateur si il n'existe pas
+        //Create user if doesn't exist yet
         if(!$existingUser){
             $user = new User();
             $user -> setUsername('John Doe');
@@ -43,14 +43,14 @@ class SecurityControllerTest extends WebTestCase
     
     public function testLoginUser()
     {
-        //Accès a la page de connexion
+        //Go to connexion page
 
         $crawler = $this->client->request('GET', '/login');
-        //verification du chargement de la page et si un formulaire est présent dessus
+        //Check if the page loaded correctly
         $this->assertResponseIsSuccessful();
         $this->assertSelectorExists('form');
 
-        //soumission du formulaire d'inscription
+        //Submit registration form
         $form = $crawler->selectButton('Connexion')->form([
             'email'=>'johndoe@gmail.com',
             'password'=>'admin012345',
@@ -58,7 +58,7 @@ class SecurityControllerTest extends WebTestCase
 
         $this->client->submit($form);
 
-        //Verification de la redirection après connexion
+        //Check if redirect correctly after connexion
         $this->assertResponseRedirects('/');
 
         $this->client->followRedirect();
