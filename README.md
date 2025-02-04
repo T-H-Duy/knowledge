@@ -33,3 +33,6 @@ Installation et migration de la base de donnée :
  - php bin/console doctrine:schema:update --force --env=test
  - php bin/console doctrine:fixtures:load --env=test
  - Lancer tests : php bin/phpunit
+
+6/ Lancer le projet en local
+ - symfony server:start
